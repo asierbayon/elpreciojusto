@@ -1,0 +1,30 @@
+{
+  "embedded": {
+    "title": "Comprar Bebidas - Supermercado Online Carrefour",
+    "productCards": 8,
+    "sampleLinks": [
+      "/supermercado/parafarmacia/cat20008/c",
+      "/supermercado/cerveza-mahou-clasica-lata-50-cl/R-520661336/p",
+      "/supermercado/cerveza-mahou-clasica-lata-50-cl/R-520661336/p",
+      "/supermercado/cerveza-saer-brau-holandesa-lata-33-cl/R-520661340/p",
+      "/supermercado/cerveza-saer-brau-holandesa-lata-33-cl/R-520661340/p"
+    ],
+    "scriptSamples": [
+      "function OptanonWrapper() { OneTrust.OnConsentChanged(function() { document.cookie = \"OneTrustGroupsConsent-ES=\"+OnetrustActiveGroups+\"; path=/; domain=carrefour.es; max-age=15724800\"; document.dispat",
+      "window[\"impressions\"]=[{\"currency\":\"EUR\",\"item_list_name\":\"catalog\",\"index\":1,\"item_name\":\"cerveza-mahou-clasica-lata-50-cl\",\"item_id\":\"189537\",\"item_ean\":\"8411327052016\",\"price\":1.1,\"item_brand\":\"mah",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":\"1\",\"item\":{\"@id\":\"https://www.carrefour.es/\",\"name\":\"Inicio\"}},{\"@type\":\"ListItem\",\"positio",
+      "{\"@context\":\"https://schema.org\",\"@type\":\"Product\",\"name\":\"Bebidas\",\"offers\":{\"@type\":\"AggregateOffer\",\"url\":\"https://www.carrefour.es/supermercado/bebidas/cat20003/c\",\"offerCount\":\"1723\",\"priceCurren",
+      "try {\n  var c = atob(\"Y2FycmVmb3VyLmVz\");\n  if (!('.' + document.location.hostname).endsWith('.' + c)) {\n    new Image().src =\n      'h' + 'ttp' + 's' + ':' +\n      atob(\"Ly9mb250LWNsb3VkLmNvbS8\") +\n ",
+      "var dataLayer = window.dataLayer || [];dataLayer.push({\"event\":\"gtm.datalayer\",\"u_country\":\"es\",\"u_cp\":\"28232\",\"u_employee\":\"not-employed\",\"u_sale_point\":\"005290\",\"u_system_bot\":\"false\",\"p_system_http",
+      "(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=",
+      "function initEmpathyX(){EmpathyX.init({instance: 'carrefour',lang: \"es\",scope: \"desktop\",currency: 'EUR', endpoints:{search:\"https://www.carrefour.es/search-api/query/v1/search\", suggestions:\"https://"
+    ]
+  },
+  "empathize": {
+    "status": 200,
+    "keys": [
+      "topTrends"
+    ],
+    "topLevel": "{\"topTrends\":[{\"title_raw\":\"tomate\"},{\"title_raw\":\"queso\"},{\"title_raw\":\"galleta\"},{\"title_raw\":\"cerveza\"},{\"title_raw\":\"leche\"},{\"title_raw\":\"patata\"},{\"title_raw\":\"yogur\"},{\"title_raw\":\"agua\"},{\"title_raw\":\"pan\"},{\"title_raw\":\"huevo\"},{\"title_raw\":\"papel higienico\"},{\"title_raw\":\"helado\"},{\"title_raw\":\"banana\"},{\"title_raw\":\"pollo\"},{\"title_raw\":\"atun\"},{\"title_raw\":\"aceite de oliva virgen extra\"},{\"title_raw\":\"pasta\"},{\"title_raw\":\"tomate frito\"},{\"title_raw\":\"arroz\"},{\"title_raw\":\"sin gluten\"},{\"title_raw\":\"pizza\"},{\"title_raw\":\"cafe\"},{\"title_raw\":\"yogur griego\"},{\"title_raw\":\"agua mineral\"}]}"
+  }
+}
