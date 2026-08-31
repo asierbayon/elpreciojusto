@@ -51,7 +51,8 @@ const App = () => {
       product.matchConfidence >= 0.5 &&
       product.size2003Formatted !== null &&
       product.sizeTodayFormatted !== null &&
-      Math.abs(product.sizeDeltaPercent) < 1,
+      Math.abs(product.sizeDeltaPercent) < 1 &&
+      product.priceToday <= product.price2003,
   );
   const [currentProduct, setCurrentProduct] = useState<MatchedProduct>(() =>
     getRandomProduct(products),
