@@ -1,6 +1,46 @@
+<div align="center">
+
+<img src="src/assets/logo-hero.png" alt="El Precio Justo" width="160" />
+
 # Inflación Carrefour 🛒📈
 
-Juego web sencillo en español: te enseñamos un producto de Carrefour con su **precio de hoy** y tienes que adivinar cuánto costaba en **2003**.
+**¿Cuánto costaba en 2003?**
+
+Te enseñamos un producto de Carrefour con su **precio de hoy** y tienes que adivinar cuánto costaba en **2003**.
+
+![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=white)
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-6-3178C6?logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white)
+![Playwright](https://img.shields.io/badge/Playwright-scraping-2EAD33?logo=playwright&logoColor=white)
+
+</div>
+
+## Capturas
+
+<table>
+  <tr>
+    <th>Adivina el precio</th>
+    <th>Resultado</th>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshots/desktop-question.jpg" alt="Pantalla de juego en escritorio: producto con su precio actual y campo para la apuesta" /></td>
+    <td><img src="docs/screenshots/desktop-result.jpg" alt="Resultado en escritorio: precio de 2003 frente al de hoy, inflación y puntuación" /></td>
+  </tr>
+</table>
+
+<p align="center">
+  <img src="docs/screenshots/mobile-question.jpg" alt="Pantalla de juego en móvil" width="260" />
+  &nbsp;&nbsp;
+  <img src="docs/screenshots/mobile-result.jpg" alt="Resultado en móvil" width="260" />
+</p>
+
+## Cómo se juega
+
+1. Ves un producto actual de Carrefour con su **precio de hoy**.
+2. Escribes cuánto crees que costaba en **2003** y pulsas **Revelar** (o Enter).
+3. Te mostramos el precio real, la inflación aparente y tu puntuación (0–100, según lo cerca que te quedes).
+4. **Siguiente** y a por otra ronda; los puntos se van sumando.
 
 ## Qué hay aquí
 
@@ -25,10 +65,10 @@ El script:
 3. Lanza búsquedas por marcas y categorías frecuentes del catálogo de 2003.
 4. Guarda JSON procesado + muestras raw en `data/raw/`.
 
-**Notas importantes**
-- Los precios dependen de la tienda asignada (`store=005290`, Madrid).
-- Cloudflare puede bloquear peticiones directas con `curl`; por eso usamos navegador real.
-- No hay API oficial pública; esto es un scrape respetuoso (concurrencia baja y pausas).
+> [!NOTE]
+> - Los precios dependen de la tienda asignada (`store=005290`, Madrid).
+> - Cloudflare puede bloquear peticiones directas con `curl`; por eso usamos navegador real.
+> - No hay API oficial pública; esto es un scrape respetuoso (concurrencia baja y pausas).
 
 ## Cómo emparejamos productos
 
@@ -74,7 +114,7 @@ npm run data:match    # emparejar catálogos
 - Matches generados: **7.502**; el juego filtra a **1.578** con confianza ≥ 0,5.
 - Muchos productos de 2003 ya no existen o cambiaron de nombre/formato.
 - Algunos matches son aproximados; mira `matchConfidence`.
-- Imágenes: faltan en productos sacados de impresiones de categoría.
+- Imágenes: faltan en productos sacados de impresiones de categoría, y el CDN de Carrefour puede bloquearlas (Cloudflare). En ese caso el juego muestra un marcador «Sin foto».
 - El scrape no cubre el 100% del supermercado, pero sí lo suficiente para un juego divertido.
 
 ## Stack
